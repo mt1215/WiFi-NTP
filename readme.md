@@ -13,8 +13,6 @@
 1. **Kconfig 條件式動態編譯**：免動原始碼！直接在 `idf.py menuconfig` 視覺化選單中挑選要測試的 Wi-Fi 基地台，C 語言底層透過預處理器（Preprocessor Macros）自動載入對應帳密。
 2. **新版 SNTP 核心與 CST-8 時區校正**：採用 ESP-IDF 最新標準實作，對時成功後自動綁定台灣標準時間（包含 `+8` 小時校正），主程式隨後可經由硬體 RTC 持續追蹤精確秒數。
 3. **Reason Code 底層斷線診斷**：針對 Wi-Fi 複雜環境，即時攔截並解析底層錯誤代碼（例如樂鑫擴充碼 `WIFI_REASON_BEACON_TIMEOUT = 200` 等），提高維護與除錯效率。
-4. **全時射頻優化（防休眠斷線）**：強制關閉 Wi-Fi Modem Sleep 省電機制（`WIFI_PS_NONE`），在嚴苛訊號環境下保證不漏失 Beacon 信標，維持高吞吐量與穩定連線。
-5. **REST API 擴充彈性**：程式架構整合了 `esp_http_server` 基礎，能輕易接收區域網路內電腦端發出的 `curl -X POST` 請求，進行遠端資料互動與控制。
 
 ---
 
