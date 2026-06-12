@@ -20,7 +20,7 @@ menu "Tom 多組 Wi-Fi 測試配置"
         default "11-4"
     config TEST_WIFI_PASS_1
         string "【AP 1】密碼"
-        default "77777777"
+        default "********"
 
     # ---- 第二組 AP 配置 ----
     config TEST_WIFI_SSID_2
@@ -28,7 +28,7 @@ menu "Tom 多組 Wi-Fi 測試配置"
         default "AndroidHandon"
     config TEST_WIFI_PASS_2
         string "【AP 2】密碼"
-        default "maotom@gmail"
+        default "********"
 
     # ---- 第三組 AP 配置 ----
     config TEST_WIFI_SSID_3
@@ -36,7 +36,7 @@ menu "Tom 多組 Wi-Fi 測試配置"
         default "god317"
     config TEST_WIFI_PASS_3
         string "【AP 3】密碼"
-        default "0933896562"
+        default "********"
 
 endmenu
 
