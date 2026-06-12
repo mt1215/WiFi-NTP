@@ -1,0 +1,42 @@
+menu "Tom 多組 Wi-Fi 測試配置"
+
+    choice TEST_WIFI_INDEX
+        prompt "請選擇目前要測試的 Wi-Fi 熱點"
+        default USE_AP_1
+        help
+            "選擇要讓 ESP32 連線哪一組 Wi-Fi 配置"
+
+        config USE_AP_1
+            bool "使用 【AP 1】 配置"
+        config USE_AP_2
+            bool "使用 【AP 2】 配置"
+        config USE_AP_3
+            bool "使用 【AP 3】 配置"
+    endchoice
+
+    # ---- 第一組 AP 配置 ----
+    config TEST_WIFI_SSID_1
+        string "【AP 1】網路 SSID 名稱"
+        default "11-4"
+    config TEST_WIFI_PASS_1
+        string "【AP 1】密碼"
+        default "77777777"
+
+    # ---- 第二組 AP 配置 ----
+    config TEST_WIFI_SSID_2
+        string "【AP 2】網路 SSID 名稱"
+        default "AndroidHandon"
+    config TEST_WIFI_PASS_2
+        string "【AP 2】密碼"
+        default "maotom@gmail"
+
+    # ---- 第三組 AP 配置 ----
+    config TEST_WIFI_SSID_3
+        string "【AP 3】網路 SSID 名稱"
+        default "god317"
+    config TEST_WIFI_PASS_3
+        string "【AP 3】密碼"
+        default "0933896562"
+
+endmenu
+

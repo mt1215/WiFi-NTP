@@ -1,0 +1,2 @@
+source D:/ESP32_Projects/RTC/build/gdbinit/symbols
+source D:/ESP32_Projects/RTC/build/gdbinit/connect
